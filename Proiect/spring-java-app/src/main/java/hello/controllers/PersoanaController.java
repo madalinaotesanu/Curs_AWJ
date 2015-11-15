@@ -41,7 +41,7 @@ public class PersoanaController {
     return new ResponseEntity<String>(null, new HttpHeaders(), HttpStatus.NOT_FOUND);
   }
 
-  @RequestMapping(value="/persoana/{id}", method = RequestMethod.DEL)
+  @RequestMapping(value="/persoana/{id}", method = RequestMethod.DELETE)
   public ResponseEntity remove(@PathVariable("id") int id) {
     for(Persoana p : this.persoane) {
       if(p.getId() == id) {
@@ -51,4 +51,24 @@ public class PersoanaController {
     }
     return new ResponseEntity<String>(null, new HttpHeaders(), HttpStatus.NOT_FOUND);
   }
-}
+  
+@RequestMapping(value="/persoana/{id}/{name}", method = RequestMethod.POST)
+  public ResponseEntity create(@PathVariable("id") int id,
+							   @PathVariable("name") String name) {
+    this.persoane.add(new Persoana(id, name));
+	
+	return new ResponseEntity<List<Persoana>>(this.persoane, new HttpHeaders(), HttpStatus.OK);
+  }
+  
+@RequestMapping(value="/persoana/{id}/{name}", method = RequestMethod.PUT)
+  public ResponseEntity update(@PathVariable("id") int id, @PathVariable("name") String name){
+	  for(Persoana p : this.persoane) {
+		  if(p.getId() == id) {
+			  p.setName(name);
+			  return new ResponseEntity<List<Persoana>>(this.persoane, new HttpHeaders(), HttpStatus.OK);
+		  }
+	  }
+	  return new ResponseEntity<List<Persoana>>(this.persoane, new HttpHeaders(), HttpStatus.NOT_FOUND);
+  }
+	
+} 
