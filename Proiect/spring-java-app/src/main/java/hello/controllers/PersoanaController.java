@@ -53,10 +53,8 @@ public class PersoanaController {
   }
   
 @RequestMapping(value="/persoana/{id}/{name}", method = RequestMethod.POST)
-  public ResponseEntity create(@PathVariable("id") int id,
-							   @PathVariable("name") String name) {
+  public ResponseEntity create(@PathVariable("id") int id, @PathVariable("name") String name) {
     this.persoane.add(new Persoana(id, name));
-	
 	return new ResponseEntity<List<Persoana>>(this.persoane, new HttpHeaders(), HttpStatus.OK);
   }
   
