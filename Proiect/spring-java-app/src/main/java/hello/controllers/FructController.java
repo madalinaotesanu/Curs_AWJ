@@ -20,12 +20,12 @@ public class FructController {
     Fruct f1 = new Fruct(1, "portocala");
     Fruct f2 = new Fruct(2, "lamaie");
     Fruct f3 = new Fruct(3, "mar");
-	Fruct f4 = new Fruct(4, "mar");
+    Fruct f4 = new Fruct(4, "mar");
 
     fructe.add(f1);
     fructe.add(f2);
     fructe.add(f3);
-	fructe.add(f4);
+    fructe.add(f4);
   }
 
   @RequestMapping(value="/fruct", method = RequestMethod.GET)

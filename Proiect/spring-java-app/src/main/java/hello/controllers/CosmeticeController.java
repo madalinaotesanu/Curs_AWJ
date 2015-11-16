@@ -20,12 +20,12 @@ public class CosmeticeController {
     Cosmetice c1 = new Cosmetice(1, "rimel");
     Cosmetice c2 = new Cosmetice(2, "ruj");
     Cosmetice c3 = new Cosmetice(3, "fond de ten");
-	Cosmetice c4 = new Cosmetice(4, "creion de sprancene");
+    Cosmetice c4 = new Cosmetice(4, "creion de sprancene");
 
     cosmetice.add(c1);
     cosmetice.add(c2);
     cosmetice.add(c3);
-	cosmetice.add(c4);
+    cosmetice.add(c4);
   }
 
   @RequestMapping(value="/cosmetice", method = RequestMethod.GET)

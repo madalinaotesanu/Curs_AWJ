@@ -20,12 +20,12 @@ public class ProdusController {
     Produs p1 = new Produs(1, "lapte");
     Produs p2 = new Produs(2, "miere");
     Produs p3 = new Produs(3, "miere");
-	Produs p4 = new Produs(4, "suc");
+    Produs p4 = new Produs(4, "suc");
 
     produse.add(p1);
     produse.add(p2);
     produse.add(p3);
-	produse.add(p4);
+    produse.add(p4);
   }
 
   @RequestMapping(value="/produs", method = RequestMethod.GET)
