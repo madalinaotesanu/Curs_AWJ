@@ -5,12 +5,633 @@
   <link rel="stylesheet" media="all" href="css/bootstrap.min.css">
   <link rel="stylesheet" media="all" href="css/custom.css">
 </head>
-<body>
+<body style = "background-color:#ffb">
+  <div class="container">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="">AWJ Base Project</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="#cosmetice">Cosmetice</a></li>
+            <li role="presentation"><a href="#produs">Produs</a></li>
+			<li role="presentation"><a href="#fruct">Fruct</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <hr/>
 
   <div class="container">
     <div ng-controller="HomeController">
-      <h1>{{ helloWorld }}</h1>
+      <h1 style="font-family:courier;"><mark><em>{{ helloWorld }}</em></mark></h1>
+      <p><em>Writing this live into the browser...</em></p>
     </div>
+  </div>
+
+  <hr/>
+
+  <!-- /Clasa 1 - Cosmetice -->
+  <div class="container">
+    <h1 style="font-family:courier;"><mark>Cosmetice</mark></h1>
+    <h2>Lista cosmetice</h2>
+    <table class="table table-bordered">
+      <tr>
+        <th>Ruj</th>
+        <th>Rimel</th>
+        <th>Fond de ten</th>
+        <th>Farduri</th>
+        <th style="width:210px;">Options</th>
+      </tr>
+      <tr>
+        <td>HYDRA EXTREME</td>
+        <td>BROW DRAMA</td>
+        <td>AFFINITONE 24H</td>
+        <td>AFFINITONE BLUSH</td>
+        <td>
+          <a href="cosmetice1.html">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>COLOR SENSATIONAL</td>
+        <td>LASH SENSATIONAL BLACK</td>
+        <td>AFFINIMAT</td>
+        <td>DIAMOND GLOW</td>
+        <td>
+          <a href="cosmetice2.html">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>COLOR SENSATIONAL CREAMY MATTES</td>
+        <td>VOLUME EXPRESS COLOSSAL</td>
+        <td>BB CREAM DREAM PURE</td>
+        <td>COLOR TATTOO</td>
+        <td>
+          <a href="cosmetice3.html">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>BABY LIPS ELECTRO</td>
+        <td>VOLUM EXPRESS ROCKET</td>
+        <td>BETTER SKIN</td>
+        <td>BIG EYES</td>
+        <td>
+          <a href="cosmetice4.html">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+    </table>
+
+    <div class="row">
+      <div class="col-md-3">
+        <h2>Editeaza cosmetice</h2>
+		  <form action="" method="">
+		  <div class="btn-group">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Ruj <span class="caret"></span>
+			</button>
+			<input type="text" class="form-control" id="attribute1" placeholder="">
+			<ul class="dropdown-menu">
+			 <li><a href="#">HYDRA EXTREME</a></li>
+			 <li><a href="#">COLOR SENSATIONAL</a></li>
+			 <li><a href="#">COLOR SENSATIONAL CREAMY MATTES</a></li>
+			 <li><a href="#">BABY LIPS ELECTRO</a></li>
+			 <li role="separator" class="divider"></li>
+			 <li><a href="#">Alte tipuri de ruj</a></li>
+			</ul>
+          </div>
+
+		  <div class="btn-group">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Rimel <span class="caret"></span>
+			</button>
+			<input type="text" class="form-control" id="attribute1" placeholder="">
+			<ul class="dropdown-menu">
+			 <li><a href="#">BROW DRAMA</a></li>
+			 <li><a href="#">LASH SENSATIONAL BLACK</a></li>
+			 <li><a href="#">VOLUME EXPRESS COLOSSAL</a></li>
+			 <li><a href="#">VOLUM EXPRESS ROCKET</a></li>
+			 <li role="separator" class="divider"></li>
+			 <li><a href="#">Alte tipuri de rimel</a></li>
+			</ul>
+          </div>
+		  <div class="btn-group">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Fond de ten <span class="caret"></span>
+			</button>
+			<input type="text" class="form-control" id="attribute1" placeholder="">			
+			<ul class="dropdown-menu">
+			 <li><a href="#">AFFINITONE 24H</a></li>
+			 <li><a href="#">AFFINIMAT</a></li>
+			 <li><a href="#">BB CREAM DREAM PURE</a></li>
+			 <li><a href="#">BETTER SKIN</a></li>
+			 <li role="separator" class="divider"></li>
+			 <li><a href="#">Alte tipuri de fond de ten</a></li>
+			</ul>
+          </div>
+ 		  <div class="btn-group">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Fard <span class="caret"></span>
+			</button>
+			<input type="text" class="form-control" id="attribute1" placeholder="">
+			<ul class="dropdown-menu">
+			 <li><a href="#">AFFINITONE BLUSH</a></li>
+			 <li><a href="#">DIAMOND GLOW</a></li>
+			 <li><a href="#">COLOR TATTOO</a></li>
+			 <li><a href="#">BIG EYES</a></li>
+			 <li role="separator" class="divider"></li>
+			 <li><a href="#">Alte tipuri de fard</a></li>
+			</ul>
+          </div>
+		  <button type="submit" class="btn btn-info">Save</button>
+		  </form>  
+      </div>
+
+
+      <div class="col-md-3 col-md-offset-6">
+        <h2>Adauga cosmetice</h2>
+        <form action="" method="">
+          <div class="form-group">
+            <label for="attribute1">Ruj</label>
+            <input type="text" class="form-control" id="attribute1" placeholder="denumirea rujului">
+          </div>
+          <div class="form-group">
+            <label for="attribute2">Rimel</label>
+            <input type="text" class="form-control" id="attribute2" placeholder="denumirea rimelului">
+          </div>
+          <div class="form-group">
+            <label for="attribute3">Fond de ten</label>
+            <input type="text" class="form-control" id="attribute3" placeholder="denumirea fondului de ten">
+          </div>
+          <div class="form-group">
+            <label for="attribute4">Farduri</label>
+            <input type="text" class="form-control" id="attribute4" placeholder="denumirea fardului">
+          </div>
+          <button type="submit" class="btn btn-success">Add</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Vizualizare Cosmetice</h2>
+      </div>
+      <div class="col-md-2">
+        <img src="http://www.maybelline.ro/~/media/Images/MNY/ro_RO/products/machiajul-buzelor/ruj-de-buze/Hydra-Extreme/Hydraextreme_model_shot.png" class="img-thumbnail"/>
+      </div>
+      <div class="col-md-10">
+        <h2>HYDRA EXTREME</h2>
+        <p>Hidratare, Culoare</p>
+        <h3>Balsam de buze</h3>
+        <table class="table table-bordered table-striped">
+          <tr>
+            <th>Culoare</th>
+            <th>Marca</th>
+          </tr>
+          <tr>
+            <td>Flamingo</td>
+            <td>Avon</td>
+          </tr>
+          <tr>
+            <td>Metallic Mauv</td>
+            <td>Maybelline</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <hr/>
+
+  <!-- /Clasa 2 - Produs -->
+  <div class="container">
+    <h1 style="font-family:courier;"><mark>Produs</mark></h1>
+    <h2>Lista produse</h2>
+    <table class="table table-bordered">
+      <tr>
+        <th>Alimentare</th>
+        <th>Vestimentare</th>
+		<th>Electrocasnice</th>
+		<th>Electronice</th>
+        <th style="width:210px;">Options</th>
+      </tr>
+      <tr>
+	  	<td>Paine</td>
+        <td>Palton</td>
+        <td>Robot de bucatarie</td>
+		<td>Laptop</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Branza</td>
+        <td>Caciula</td>
+		<td>Masina de spalat</td>
+		<td>Imprimanta</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Lapte</td>
+        <td>Fular</td>
+		<td>Aspirator</td>
+        <td>Televizor</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Salam</td>
+        <td>Geaca</td>
+		<td>Frigider</td>
+		<td>Tableta</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+    </table>
+
+    <div class="row">
+      <div class="col-md-3">
+        <h2>Editeaza produse</h2>
+        <form action="" method="">
+          <div class="form-group">
+            <label for="attribute1">Alimentare</label>
+            <input type="text" class="form-control" id="attribute1" placeholder="denumirea produsului alimentar">
+          </div>
+          <div class="form-group">
+            <label for="attribute2">Vestimentare</label>
+            <input type="text" class="form-control" id="attribute2" placeholder="denumirea produsului vestimentar">
+          </div>
+          <div class="form-group">
+            <label for="attribute1">Electrocasnice</label>
+            <input type="text" class="form-control" id="attribute1" placeholder="denumirea produsului electrocasnic">
+          </div>
+          <div class="form-group">
+            <label for="attribute1">Electronice</label>
+            <input type="text" class="form-control" id="attribute1" placeholder="denumirea produsului electronic">
+          </div>
+          <button type="submit" class="btn btn-info">Save</button>
+        </form>
+      </div>
+
+
+      <div class="col-md-3 col-md-offset-6">
+        <h2>Adauga produse</h2>
+        <form action="" method="">
+          <div class="form-group">
+            <label for="attribute1">Alimentare</label>
+            <input type="text" class="form-control" id="attribute1" placeholder="denumirea produsului alimentar">
+          </div>
+          <div class="form-group">
+            <label for="attribute2">Vestimentare</label>
+            <input type="text" class="form-control" id="attribute2" placeholder="denumirea produsului vestimentar">
+          </div>
+          <div class="form-group">
+            <label for="attribute1">Electrocasnice</label>
+            <input type="text" class="form-control" id="attribute1" placeholder="denumirea produsului electrocasnic">
+          </div>
+          <div class="form-group">
+            <label for="attribute1">Electronice</label>
+            <input type="text" class="form-control" id="attribute1" placeholder="denumirea produsului electronic">
+          </div>
+          <button type="submit" class="btn btn-success">Add</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Vizualizare Produse</h2>
+      </div>
+      <div class="col-md-2">
+        <img src="http://assets.sport.ro/assets/foodstory/2012/09/08/image_galleries/885/decalogul-nutritiei-zilnice-10-alimente-pe-care-sa-le-ai-mereu-pe-masa_size1.jpg" class="img-thumbnail"/>
+      </div>
+      <div class="col-md-10">
+        <h2>Produse Alimentare</h2>
+        <p>Data expirarii, Categorie</p>
+        <h3>Produse alimentare de casa</h3>
+        <table class="table table-bordered table-striped">
+          <tr>
+            <th>Vegetale</th>
+            <th>Animale</th>
+          </tr>
+          <tr>
+            <td>Catraveti</td>
+            <td>Lapte</td>
+          </tr>
+          <tr>
+            <td>Cartofi</td>
+            <td>Branza</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <hr/>
+  
+  
+    <!-- /Clasa 3 - Fruct -->
+  <div class="container">
+    <h1 style="font-family:courier;"><mark>Fruct</mark></h1>
+    <h2>Lista fructe</h2>
+    <table class="table table-bordered">
+      <tr>
+        <th>Fructe de padure</th>
+        <th>Fructe de mare</th>
+        <th style="width:210px;">Options</th>
+      </tr>
+      <tr>
+        <td>Mure</td>
+        <td>Creveti</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Afine</td>
+        <td>Homar</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Zmeura</td>
+        <td>Caracatita</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+    </table>
+
+    <div class="row">
+      <div class="col-md-3">
+        <h2>Editeaza fructe</h2>
+        <form action="" method="">
+          <div class="form-group">
+            <label for="attribute1">Fructe de padure</label>
+            <input type="text" class="form-control" id="attribute1" placeholder="denumirea fructului">
+          </div>
+          <div class="form-group">
+            <label for="attribute2">Fructe de mare</label>
+            <input type="text" class="form-control" id="attribute2" placeholder="denumirea fructului">
+          </div>
+          <button type="submit" class="btn btn-info">Save</button>
+        </form>
+      </div>
+
+
+      <div class="col-md-3 col-md-offset-6">
+        <h2>Adauga fructe</h2>
+        <form action="" method="">
+          <div class="form-group">
+            <label for="attribute1">Fructe de padure</label>
+            <input type="text" class="form-control" id="attribute1" placeholder="denumirea fructului">
+          </div>
+          <div class="form-group">
+            <label for="attribute2">Fructe de mare</label>
+            <input type="text" class="form-control" id="attribute2" placeholder="denumirea fructului">
+          </div>
+          <button type="submit" class="btn btn-success">Add</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Vizualizare Fructe</h2>
+      </div>
+      <div class="col-md-2">
+        <img src="http://alvalia.ro/acasa/wp-content/uploads/2014/10/hrana3.jpg" class="img-thumbnail"/>
+      </div>
+      <div class="col-md-10">
+        <h2>Fructe de padure</h2>
+        <p>Gust, Culoare</p>
+        <h3>Fructe de padure romanesti</h3>
+        <table class="table table-bordered table-striped">
+          <tr>
+            <th>Gust dulce-acrisor</th>
+            <th>Culoare</th>
+          </tr>
+          <tr>
+            <td>Zmeura</td>
+            <td>Rosu</td>
+          </tr>
+          <tr>
+            <td>Afine</td>
+            <td>Albastru</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <hr/>
+
+  <div class="container">
+    <footer class="footer">
+      <p class="text-muted pull-left">AWJ Base Project &copy; 2015-2016</p>
+      <p class="text-muted pull-right">Otesanu Maria-Madalina, 333AA</p>
+    </footer>
   </div>
 
   <script src="js/jquery-1.11.3.min.js"></script>
